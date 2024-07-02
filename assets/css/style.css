@@ -15011,9 +15011,6 @@ div#global-loader .whirly-loader:not(:required) {
 .sidebar .sidebar-menu, .sidebars .sidebar-menu {
   padding: 24px;
 }
-.sidebar .sidebar-menu > ul > li, .sidebars .sidebar-menu > ul > li {
-  margin-bottom: 24px;
-}
 .sidebar .sidebar-menu > ul > li.active a, .sidebars .sidebar-menu > ul > li.active a {
   color: #ffffff;
 }
@@ -15132,8 +15129,6 @@ div#global-loader .whirly-loader:not(:required) {
   border: 2px solid #FDB;
 }
 .sidebar .sidebar-menu > ul > li.submenu-open ul, .sidebars .sidebar-menu > ul > li.submenu-open ul {
-  border-bottom: 1px solid #e8ebed;
-  padding: 0 0 14px 0;
   display: block;
 }
 .sidebar .sidebar-menu > ul > li.submenu-open ul li a, .sidebars .sidebar-menu > ul > li.submenu-open ul li a {
