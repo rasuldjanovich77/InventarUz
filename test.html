@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Table with Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* Add any styles you want for your table and button */
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+</style>
+<body>
+    <button id="addTableButton">Add Table</button>
+    <div id="tableContainer"></div>
+    <script>
+        document.getElementById('addTableButton').addEventListener('click', function() {
+    // Create the table element
+    let table = document.createElement('table');
+
+    // Create the table header
+    let thead = document.createElement('thead');
+    let headerRow = document.createElement('tr');
+    let headers = ['Header 1', 'Header 2', 'Header 3'];
+    headers.forEach(headerText => {
+        let th = document.createElement('th');
+        th.appendChild(document.createTextNode(headerText));
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Create the table body
+    let tbody = document.createElement('tbody');
+    for (let i = 0; i < 3; i++) { // Adding 3 rows as an example
+        let row = document.createElement('tr');
+        for (let j = 0; j < 3; j++) { // 3 cells per row as an example
+            let cell = document.createElement('td');
+            cell.appendChild(document.createTextNode(`Row ${i + 1} Cell ${j + 1}`));
+            row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+    }
+    table.appendChild(tbody);
+
+    // Append the table to the container
+    document.getElementById('tableContainer').appendChild(table);
+});
+
+    </script>
+</body>
+</html>
