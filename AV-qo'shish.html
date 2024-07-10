@@ -1381,6 +1381,17 @@
 						</div>
 					</div>
 				</form>
+                <form id="myForm">
+                    <div id="inputContainer">
+                        <!-- Initial input field -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="inputField">
+                            <button type="button" onclick="this.parentNode.remove()">Remove</button>
+                        </div>
+                    </div>
+                    <!-- Button to add a new input field -->
+                    <button type="button" onclick="addInput()">Add Input</button>
+                </form>
 			<!-- /add -->
 
 		</div>
@@ -1732,6 +1743,34 @@
 	<script src="assets/js/theme-script.js"></script>	
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/custom-select2.js"></script>
+
+    <script>
+        function addInput() {
+            // Create a new div to hold the input and remove button
+            var newDiv = document.createElement("div");
+            newDiv.className = "input-group";
+            
+            // Create a new input element
+            var newInput = document.createElement("input");
+            newInput.type = "text";
+            newInput.name = "inputField";
+            
+            // Create a remove button
+            var removeButton = document.createElement("button");
+            removeButton.type = "button";
+            removeButton.innerText = "Remove";
+            removeButton.onclick = function() {
+                this.parentNode.remove();
+            };
+
+            // Append the input and remove button to the div
+            newDiv.appendChild(newInput);
+            newDiv.appendChild(removeButton);
+            
+            // Add the new div to the form
+            document.getElementById("inputContainer").appendChild(newDiv);
+        }
+    </script>
 
 
 </body>
