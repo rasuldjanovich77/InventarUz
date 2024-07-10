@@ -363,17 +363,18 @@
 								<h6 class="submenu-hdr">Moddiy texnik baza</h6>
 								<ul>
 									<li class="submenu">
-										<a href="javascript:void(0);" class="active subdrop"><i data-feather="file-text"></i><span>Asosiy Vositalar</span><span class="menu-arrow"></span></a>
+										<a href="javascript:void(0);"><i data-feather="file-text"></i><span>Asosiy Vositalar</span><span class="menu-arrow"></span></a>
 										<ul>
 											<li><a href="shartnomalar-ro'yxati.html">Shartnomalar</a></li>
-											<li><a href="asosiy-vositalar-ro'yxati.html" class="active">Asosiy vositalar ro’yxati</a></li>
+											<li><a href="asosiy-vositalar-ro'yxati.html">Asosiy vositalar ro’yxati</a></li>
 											<li><a href="#">Asosiy vostialar harakati</a></li>
 										</ul>
 									</li>
+                                    
 								</ul>
 								<ul>
 									<li><a href="vosita-turlari.html"><i data-feather="shopping-cart"></i><span>Vosita turlari</span></a></li>
-									<li><a href="vosita-modellari.html"><i data-feather="file-text"></i><span>Vosita modellari</span></a></li>
+									<li class="active"><a href="vosita-modellari.html" class="active"><i data-feather="file-text"></i><span>Vosita modellari</span></a></li>
 									<li><a href="#"><i data-feather="copy"></i><span>Tarkibiy tuzilma</span></a></li>
 								</ul>
 								<ul>
@@ -1300,7 +1301,7 @@
 					<div class="page-header">
 						<div class="add-item d-flex">
 							<div class="page-title">
-								<h4>Asosiy vositalar ro'yxati</h4>
+								<h4>Vositalar modellari</h4>
 							</div>
 						</div>
 						<ul class="table-top-head">
@@ -1320,9 +1321,9 @@
 								<a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-chevron-up"></i></a>
 							</li>
 						</ul>
-						<!-- <div class="page-btn">
-							<a href="add-product.html" class="btn btn-added"><i data-feather="plus-circle" class="me-2"></i>Xodim qo'shish</a>
-						</div>	 -->
+						<div class="page-btn">
+							<a href="model-qo'shish.html" class="btn btn-added"><i data-feather="plus-circle" class="me-2"></i>Model qo'shish</a>
+						</div>	
 						<!-- <div class="page-btn import">
 							<a href="#" class="btn btn-added color" data-bs-toggle="modal" data-bs-target="#view-notes"><i
 								data-feather="download" class="me-2"></i>Import Product</a>
@@ -1338,12 +1339,12 @@
 										<a href="javascript:void(0);" class="btn btn-searchset"><i data-feather="search" class="feather-search"></i></a>
 									</div>
 								</div>
-								<div class="search-path">
+								<!-- <div class="search-path">
 									<a class="btn btn-filter" id="filter_search">
 										<i data-feather="filter" class="filter-icon"></i>
 										<span><img src="assets/img/icons/closes.svg" alt="img"></span>
 									</a>
-								</div>
+								</div> -->
 								<!-- <div class="form-sort">
 									<i data-feather="sliders" class="info-img"></i>
 									<select class="select">
@@ -1359,68 +1360,42 @@
 									<div class="row">
 										<div class="col-lg-12 col-sm-12">
 											<div class="row">
-												<div class="col-lg-2 col-sm-6 col-12">
+												<div class="col-lg-3 col-sm-6 col-12">
 													<div class="input-blocks">
 														<!-- <i data-feather="box" class="info-img"></i> -->
 														<div class="input-blocks">
+                                                            <i data-feather="calendar" class="info-img"></i>
                                                             <div class="input-groupicon">
-                                                                <input type="text" placeholder="Inventar raqami">
+                                                                <input type="text" class="datetimepicker" placeholder="Choose Date" >
                                                             </div>
                                                         </div>
 													</div>
 												</div>
-												<div class="col-lg-2 col-sm-6 col-12">
-													<div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <select class="js-example-basic-single select2">
-                                                                    <option selected="selected">Asosiy vosita turi</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
+												<div class="col-lg-3 col-sm-6 col-12">
+													<div class="input-blocks">
+														<!-- <i data-feather="stop-circle" class="info-img"></i> -->
+														<select class="select">
+															<option>Status</option>
+															<option>Faol</option>
+															<option>Faol emas</option>
+														</select>
+													</div>
 												</div>
 												
-												<div class="col-lg-2 col-sm-6 col-12">
-													<div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <select class="js-example-basic-single select2">
-                                                                    <option selected="selected">Asosiy vosita modellari</option>
-                                                                    <option>HP</option>
-                                                                    <option>LG</option>
-                                                                    <option>LENOVO</option>
-                                                                </select>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-												</div>
-
-                                                <div class="col-lg-2 col-sm-6 col-12">
+												<div class="col-lg-3 col-sm-6 col-12">
 													<div class="input-blocks">
-                                                        <i data-feather="calendar" class="info-img"></i>
-                                                        <div class="input-groupicon">
-                                                            <input type="text" class="datetimepicker" placeholder="Choose Date" >
-                                                        </div>
-                                                    </div>
-												</div>
-
-                                                <div class="col-lg-2 col-sm-6 col-12">
-													<div class="input-blocks">
-                                                        <i data-feather="calendar" class="info-img"></i>
-                                                        <div class="input-groupicon">
-                                                            <input type="text" class="datetimepicker" placeholder="Choose Date" >
-                                                        </div>
-                                                    </div>
-												</div>
-
-												<div class="col-lg-2 col-sm-6 col-12">
-													<div class="input-blocks">
-                                                        <button type="button" class="btn btn-primary btn-filters ms-auto" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">KIRIM QILISH</button>
+														<!-- <i data-feather="git-merge" class="info-img"></i> -->
+														<select class="select">
+															<option>Foydalanishga topshirilishi</option>
+															<option>Foydalanishga topshirilgan</option>
+															<option>Foydalanishga topshirilmagan</select>
 													</div>
+												</div>
+
+												<div class="col-lg-3 col-sm-6 col-12">
+													<!-- <div class="input-blocks">
+                                                        <button type="button" class="btn btn-primary btn-filters ms-auto" data-bs-toggle="modal" data-bs-target="#bs-example-modal-lg">KIRIM QILISH</button>
+													</div> -->
 												</div>
                                                 <!-- <i data-feather="search" class="feather-search"></i> -->
 											</div>
@@ -1435,9 +1410,7 @@
 										<tr>
 											<th class="no-sort">#</th>
 											<th>Nomi</th>
-											<th>Modeli</th>
-											<th>Turi</th>
-                                            <th>Soni</th>
+                                            <th>AV lar soni</th>
 											<th>Holati</th>
 											<th class="no-sort">Amallar</th>
 										</tr>
@@ -1447,16 +1420,11 @@
 											<td>
 												1											
 											</td>
-											<td>HP</td>
 											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>16 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+											<td>7 ta</td>
+											<td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1470,16 +1438,11 @@
 											<td>
 												2											
 											</td>
-											<td>FUJiTSU</td>
-											<td>Lorem</td>
 											<td>Lorem ipsum</td>
-                                            <td>17 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+											<td>8 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1493,16 +1456,11 @@
 											<td>
 												3											
 											</td>
-											<td>SAMSUNG</td>
-											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>18 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+											<td>Lorem ipsum dolor</td>
+                                            <td>9 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1516,16 +1474,11 @@
 											<td>
 												4											
 											</td>
-											<td>ASUS</td>
 											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>19 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+                                            <td>10 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1539,16 +1492,11 @@
 											<td>
 												5											
 											</td>
-											<td>LENOVO</td>
-											<td>Lorem</td>
 											<td>Lorem ipsum</td>
-                                            <td>20 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+                                            <td>11 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1562,16 +1510,11 @@
 											<td>
 												6											
 											</td>
-											<td>HP</td>
-											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>21 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+											<td>Lorem ipsum dolor</td>
+                                            <td>12 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1585,16 +1528,11 @@
 											<td>
 												7											
 											</td>
-											<td>SAMSUNG</td>
 											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>22 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+                                            <td>13 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1608,16 +1546,11 @@
 											<td>
 												8											
 											</td>
-											<td>LG</td>
-											<td>Lorem</td>
 											<td>Lorem ipsum</td>
-                                            <td>23 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+                                            <td>14 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1631,16 +1564,11 @@
 											<td>
 												9											
 											</td>
-											<td>ASUS</td>
-											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>24 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+											<td>Lorem ipsum dolor</td>
+                                            <td>15 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -1654,16 +1582,11 @@
 											<td>
 												10											
 											</td>
-											<td>LENOVO</td>
 											<td>Lorem</td>
-											<td>Lorem ipsum</td>
-                                            <td>25 ta</td>
-											<td><span class="badge badge-linesuccess">Faol</span></td>
+                                            <td>16 ta</td>
+                                            <td>Foydalanishga topshirilgan</td>
 											<td class="action-table-data">
 												<div class="edit-delete-action">
-													<a class="me-2 edit-icon  p-2" href="add-product.html">
-														<i data-feather="eye" class="feather-eye"></i>
-													</a>
 													<a class="me-2 p-2" href="add-product.html">
 														<i data-feather="edit" class="feather-edit"></i>
 													</a>
@@ -2669,13 +2592,16 @@
                                 </div>
                             </div>
                             <div class="custom-file-container mb-3" data-upload-id="mySecondImage">
-                                <label>File</label>
-                                <label class="custom-file-container__custom-file" >
-                                    <input type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
-                                    <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
-                                    <span class="custom-file-container__custom-file__custom-file-control"></span>
-                                </label>
-                                <div class="custom-file-container__image-preview"></div>
+								<div class="input-blocks image-upload-down">
+									<label>	Upload CSV File</label>
+									<div class="image-upload download">
+										<input type="file">
+										<div class="image-uploads">
+											<img src="assets/img/download-img.png" alt="img">
+											<h4>Drag and drop a <span>file to upload</span></h4>
+										</div>
+									</div>
+								</div>
                             </div>
                             <div class="mb-3 mx-1">
                                 <label class="col-form-label">Narxi</label>
@@ -2753,9 +2679,9 @@
 		<script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
 
 		<!-- Custom JS -->
-		<script src="assets/js/theme-script.js"></script>	
+		
+	<script src="assets/js/theme-script.js"></script>
 		<script src="assets/js/script.js"></script>
-		<script src="assets/js/custom-select2.js"></script>
 	
 	<!--<script src="assets/js/theme-settings.js"></script>-->
 	
