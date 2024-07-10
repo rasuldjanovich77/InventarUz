@@ -365,9 +365,9 @@
                             <h6 class="submenu-hdr">Moddiy texnik baza</h6>
                             <ul>
                                 <li class="submenu">
-                                    <a href="javascript:void(0);"><i data-feather="file-text"></i><span>Asosiy Vositalar</span><span class="menu-arrow"></span></a>
+                                    <a href="javascript:void(0);" class="active subdrop"><i data-feather="file-text"></i><span>Asosiy Vositalar</span><span class="menu-arrow"></span></a>
                                     <ul>
-                                        <li><a href="shartnomalar-ro'yxati.html">Shartnomalar</a></li>
+                                        <li><a href="shartnomalar-ro'yxati.html" class="active">Shartnomalar</a></li>
                                         <li><a href="asosiy-vositalar-ro'yxati.html">Asosiy vositalar ro’yxati</a></li>
                                         <li><a href="#">Asosiy vostialar harakati</a></li>
                                     </ul>
@@ -382,7 +382,7 @@
                             <ul>
                                 <li class="submenu">
                                     <h6 class="submenu-hdr">Tarkibiy tuzilma</h6>
-                                    <li class="active"><a href="bo'limlar-ro'yxati.html" class="active"><i data-feather="file-text"></i><span>Bo'limlar ro'yxati</span></a></li>
+                                    <li><a href="bo'limlar-ro'yxati.html"><i data-feather="file-text"></i><span>Bo'limlar ro'yxati</span></a></li>
                                 </li>
                             </ul>
                             <li class="submenu-open">
@@ -1301,13 +1301,13 @@
 				<div class="page-header">
 					<div class="add-item d-flex">
 						<div class="page-title">
-							<h4>Tur qo'shish</h4>
+							<h4>Asosiy vositalar qo'shish</h4>
 						</div>
 					</div>
 					<ul class="table-top-head">
 						<li>
 							<div class="page-btn">
-								<a href="vosita-turlari.html" class="btn btn-secondary"><i data-feather="arrow-left" class="me-2"></i>Ortga</a>
+								<a href="shartnomalar-ro'yxati.html" class="btn btn-secondary"><i data-feather="arrow-left" class="me-2"></i>Ortga</a>
 							</div>
 						</li>
 						<li>
@@ -1335,50 +1335,35 @@
 										<div class="row">
 											<div class="col-lg-12 col-sm-6 col-12">
 												<div class="mb-3 add-product">
-													<label class="form-label">Nomi</label>
+													<label class="form-label">Vosita nomi</label>
 													<input type="text" class="form-control">
 												</div>
 											</div>
-											<div class="col-lg-12 col-sm-6 col-12">
+                                            <div class="col-lg-12 col-sm-6 col-12">
 												<div class="mb-3 add-product">
-													<label class="form-label">Holati</label>
-													<select class="select">
-														<option>Foydalanishga topshirilgan</option>
-														<option>Foydalanishga topshirilmagan</option>
+													<label class="form-label">Vosita modeli</label>
+													<select class="js-example-basic-single select2">
+														<option selected="selected">Vosita modeli</option>
+														<option>HP</option>
+														<option>Lenovo</option>
+														<option>Canon</option>
 													</select>
 												</div>
 											</div>
-											<div class="col-lg-12 col-sm-6 col-12">
+                                            <div class="col-lg-12 col-sm-6 col-12">
 												<div class="mb-3 add-product">
-													<label class="form-label">Tegishli tur</label>
-														<select class="js-example-basic-single select2">
-															<option selected="selected">Tegishli tur</option>
-															<option>Lorem</option>
-															<option>Lorem ipsum</option>
-															<option>Lorem ipsum dolor</option>
-														</select>
-													</div>
-												</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-sm-6 col-12">
-												<div class="text-editor add-list add">
-													<div class="add-choosen">
-														<div class="input-blocks">
-															<div class="image-upload">
-																<input type="file">
-																<div class="image-uploads">
-																	<i data-feather="plus-circle" class="plus-down-add me-0"></i>
-																	<h4>Add Images</h4>
-																</div>
-															</div>
-														</div>
-													</div>			
+													<label class="form-label">Soni</label>
+													<input type="number" class="form-control">
 												</div>
 											</div>
-										</div>
-										
-										<div class="addservice-info">
+                                            <div class="col-lg-12 col-sm-6 col-12">
+												<div class="mb-3 add-product">
+													<label class="form-label">Vosita turi</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+                                        </div>
+                                        <div class="addservice-info">
 											<div class="row mb-3">
 												<div class="col-lg-12 col-sm-6 col-12">
 													<label class="form-label">Tasnif</label>
