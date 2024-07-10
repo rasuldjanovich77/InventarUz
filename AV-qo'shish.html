@@ -1383,10 +1383,9 @@
 				</form>
                 <form id="myForm">
                     <div id="inputContainer">
-                        <!-- Initial input field -->
+                        <!-- Initial input field  xaxaxa-->
                         <div class="input-group">
                             <input type="text" class="form-control" name="inputField">
-                            <button type="button" onclick="this.parentNode.remove()">Remove</button>
                         </div>
                     </div>
                     <!-- Button to add a new input field -->
@@ -1758,14 +1757,13 @@
             // Create a remove button
             var removeButton = document.createElement("button");
             removeButton.type = "button";
-            removeButton.innerText = "Remove";
             removeButton.onclick = function() {
-                this.parentNode.remove();
+                // this.parentNode.remove();
             };
 
             // Append the input and remove button to the div
             newDiv.appendChild(newInput);
-            newDiv.appendChild(removeButton);
+            // newDiv.appendChild(removeButton);
             
             // Add the new div to the form
             document.getElementById("inputContainer").appendChild(newDiv);

@@ -14032,6 +14032,11 @@ hr {
   line-height: normal;
   color: #092C4C;
 }
+.input-group {
+  width: 120px;
+  height: auto;
+
+}
 .user-menu.nav > li > a .badge {
   color: #ffffff;
   font-weight: 700;
